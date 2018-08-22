@@ -1,3 +1,6 @@
+# Caution: Code written in python 3
+'''This is a program which calculates the square root of a number by using
+Newton's method. This program accepts floating point inputs as well.'''
 import math
 
 class sqrt:
@@ -36,7 +39,8 @@ class sqrt:
         else:
             return self.sqrt
 
-x = 7.6789
+print("This programs gets a number as an input and outpus its square root as the output. Decimals are allowed")
+x = float(input("Enter the number"))
 square_root = sqrt(x)
 result = square_root.sqrt()
 print("The square root of %.3f is %.2f using Newton's method." % (x,result))
