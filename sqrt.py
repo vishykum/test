@@ -24,7 +24,7 @@ class sqrt:
             if self.x-x_1_2 < x_1_1-self.x:
                 self.x_1 = x_1_2
                 self.y = y_2
-            elif self.x-x_1_2 > x_1_2-self.x:
+            elif self.x-x_1_2 > x_1_1-self.x:
                 self.x_1 = x_1_1
                 self.y = y_1
         else:
@@ -39,8 +39,8 @@ class sqrt:
         else:
             return self.sqrt
 
-print("This programs gets a number as an input and outpus its square root as the output. Decimals are allowed")
-x = float(input("Enter the number"))
+print("This program gets a number as an input and outpus its square root as the output. Decimals are allowed.\n")
+x = float(input("Enter the number: "))
 square_root = sqrt(x)
 result = square_root.sqrt()
 print("The square root of %.3f is %.2f using Newton's method." % (x,result))
